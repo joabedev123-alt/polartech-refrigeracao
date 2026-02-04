@@ -1,6 +1,7 @@
 import { BUSINESS_INFO } from "@/lib/constants";
 import logoImage from "@/assets/logo-polartech.png";
 
+// Force refresh
 const navLinks = [
   { href: "#servicos", label: "Serviços" },
   { href: "#como-funciona", label: "Como funciona" },

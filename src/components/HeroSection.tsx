@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { getWhatsAppLink } from "@/lib/constants";
 import heroImage from "@/assets/hero-technician.jpeg";
 
+// Force refresh
 const badges = [
   { icon: Shield, text: "Garantia" },
   { icon: Wrench, text: "Técnicos certificados" },
