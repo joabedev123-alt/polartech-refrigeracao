@@ -1,31 +1,31 @@
-import { MapPin, Clock, Zap } from "lucide-react";
+import { Shield, Wrench, Clock } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink } from "@/lib/constants";
 import heroImage from "@/assets/hero-technician.jpeg";
 
 const badges = [
-  { icon: MapPin, text: "Atendimento em até 50km de BH" },
-  { icon: Zap, text: "Manutenção e consertos em geral" },
-  { icon: Clock, text: "Agendamento fácil no WhatsApp" },
+  { icon: Shield, text: "Garantia" },
+  { icon: Wrench, text: "Técnicos certificados" },
+  { icon: Clock, text: "Atendimento rápido" },
 ];
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
-        {/* Gradient Overlay - Reduced opacity for better image visibility */}
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-navy-dark/70" />
-        {/* Frost texture - Reduced opacity */}
+        {/* Frost texture */}
         <div className="absolute inset-0 frost-overlay opacity-30" />
       </div>
 
       {/* Content */}
-      <div className="container relative z-10 py-12 md:py-20 lg:py-24">
+      <div className="container relative z-10 pt-24 md:pt-32 lg:pt-40 pb-12 md:pb-20 lg:pb-24">
         <div className="max-w-3xl">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
@@ -34,9 +34,17 @@ export const HeroSection = () => {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-base md:text-xl text-white/90 mb-8 animate-fade-in-up font-medium" style={{ animationDelay: "0.1s" }}>
+          <p className="text-base md:text-xl text-white/90 mb-6 animate-fade-in-up font-medium" style={{ animationDelay: "0.1s" }}>
             Diagnóstico técnico, orientação clara e agendamento direto pelo WhatsApp.
           </p>
+
+          {/* 24/7 Badge - DESTAQUE */}
+          <div className="inline-flex items-center gap-3 bg-gold/90 backdrop-blur-sm px-6 py-3 rounded-full mb-8 animate-pulse shadow-lg border-2 border-gold">
+            <Clock className="w-6 h-6 text-navy animate-spin" style={{ animationDuration: '3s' }} />
+            <span className="text-navy font-bold text-lg md:text-xl">
+              Atendimento 24 Horas • Todos os Dias
+            </span>
+          </div>
 
           {/* Badges */}
           <div className="flex flex-wrap gap-3 md:gap-4 mb-8 md:mb-10 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>

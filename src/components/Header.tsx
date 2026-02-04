@@ -84,8 +84,8 @@ export const Header = () => {
           <img
             src={logoImage}
             alt="Polartech Refrigerações"
-            // Increased sizes: h-14 (scrolled) and h-20 (default) - was h-10/h-14
-            className={`transition-all duration-300 ${isScrolled ? "h-14" : "h-20"}`}
+            // Increased sizes: h-20 (scrolled) and h-32 (default) - significantly larger
+            className={`transition-all duration-300 ${isScrolled ? "h-20" : "h-32"}`}
           />
         </a>
 
