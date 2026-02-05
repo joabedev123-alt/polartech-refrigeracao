@@ -6,8 +6,8 @@ import path from "path";
 export default defineConfig(({ mode }) => ({
   base: mode === "development" ? "/" : "/polartech-whats-app-hero/",
   server: {
-    host: "::",
-    port: 8080,
+    host: "0.0.0.0", // Listen on all network interfaces
+    port: 3000,
     hmr: {
       overlay: false,
     },
