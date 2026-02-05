@@ -1,7 +1,6 @@
 import { BUSINESS_INFO } from "@/lib/constants";
 import logoImage from "@/assets/logo-polartech.png";
 
-// Force refresh
 const navLinks = [
   { href: "#servicos", label: "Serviços" },
   { href: "#como-funciona", label: "Como funciona" },
@@ -19,13 +18,11 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {/* Logo & Description */}
           <div className="lg:col-span-2">
-            <div className="inline-block bg-white p-3 rounded-xl mb-6">
-              <img
-                src={logoImage}
-                alt="Polartech Refrigerações"
-                className="h-24"
-              />
-            </div>
+            <img
+              src={logoImage}
+              alt="Polartech Refrigerações"
+              className="h-24 mb-4"
+            />
             <p className="text-white/70 max-w-sm">
               Serviço técnico especializado em manutenção e conserto de refrigeração. Atendimento em Belo Horizonte e região metropolitana (até 50km).
             </p>
