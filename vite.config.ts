@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === "development" ? "/" : "/polartech-whats-app-hero/",
+  base: mode === "development" ? "/" : "/polartech-refrigeracao/",
   server: {
     host: "0.0.0.0", // Listen on all network interfaces
     port: 3000,
