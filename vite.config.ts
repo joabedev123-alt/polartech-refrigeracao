@@ -12,6 +12,11 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  build: {
+    modulePreload: {
+      polyfill: false,
+    },
+  },
   plugins: [react()].filter(Boolean),
   resolve: {
     alias: {
