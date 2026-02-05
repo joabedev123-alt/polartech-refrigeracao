@@ -30,8 +30,8 @@ export const HeroSection = () => {
         <div className="max-w-3xl">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 animate-fade-in-up">
-            Conserto e manutenção de refrigeração com{" "}
-            <span className="text-gold">atendimento rápido</span> na região de BH.
+            Conserto e manutenção de geladeira e frizer{" "}
+            <span className="text-gold">24 horas</span> em Belo Horizonte e região metropolitana
           </h1>
 
           {/* Subheadline */}

@@ -15,9 +15,9 @@ export const getWhatsAppLink = (customMessage?: string) => {
 
 export const BUSINESS_INFO = {
   name: "Polartech Refrigerações",
-  slogan: "Conserto e manutenção de refrigeração com atendimento rápido na região de BH.",
+  slogan: "Conserto e manutenção de geladeira e frizer 24 horas em Belo Horizonte e região metropolitana",
   description: "Diagnóstico técnico, orientação clara e agendamento direto pelo WhatsApp.",
   region: "Belo Horizonte e região (até 50km)",
   areas: ["Belo Horizonte", "Contagem", "Betim", "Nova Lima", "Venda Nova", "Pampulha"],
-  hours: "Segunda a Sábado",
+  hours: "segunda a domingo",
 };
