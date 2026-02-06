@@ -1,9 +1,9 @@
 // WhatsApp link configuration for Polartech Refrigerações
 export const WHATSAPP_CONFIG = {
   // Replace with actual number in E.164 format (no + sign)
-  numberE164: "{{WHATSAPP_NUMBER_E164}}",
+  numberE164: "31983893399",
   // Display format
-  numberDisplay: "{{WHATSAPP_NUMBER_DISPLAY}}",
+  numberDisplay: "(31) 98389-3399",
   // Default message
   defaultMessage: "Olá! Quero agendar um atendimento de refrigeração com a Polartech.",
 };

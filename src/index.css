@@ -228,7 +228,7 @@
   }
 
   .animate-scroll-brands {
-    animation: scroll-brands 40s linear infinite;
+    animation: scroll-brands 10s linear infinite;
   }
 
   @keyframes scroll-brands {

@@ -16,6 +16,15 @@ export default defineConfig(({ mode }) => ({
     modulePreload: {
       polyfill: false,
     },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+          ui: ['@radix-ui/react-slot', 'class-variance-authority', 'clsx', 'tailwind-merge'],
+          icons: ['lucide-react', 'react-icons'],
+        },
+      },
+    },
   },
   plugins: [react()].filter(Boolean),
   resolve: {
